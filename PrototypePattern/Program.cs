@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace PrototypePattern
 {
     class Program
@@ -16,6 +11,7 @@ namespace PrototypePattern
             string GetMobilePhoneDetails();
         }
 
+        //'ConcretePrototype' class
         class MobilePhone : IMobilePhone
         {
             public string Name { get; set; }
@@ -45,6 +41,7 @@ namespace PrototypePattern
         }
 
 
+        //'Client'
         static void Main(string[] args)
         {
             MobilePhone mobilePhone = new MobilePhone();
